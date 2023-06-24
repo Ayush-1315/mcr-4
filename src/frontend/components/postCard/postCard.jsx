@@ -6,23 +6,21 @@ export const PostCard = ({ postData }) => {
   const {
     postId,
     username,
-    name,
     picUrl,
     post,
     postDescription,
     upvotes,
     downvotes,
     tags,
-    createdAt,
     isBookmarked,
   } = postData;
   const {postDispatch}=useData();
   return (
     <div className={postCard.card}>
       <div className={postCard.div1}>
-        <button onClick={()=>postDispatch({type:"UPVOTE",payload:postId})}>Upvote</button>
+        <button onClick={()=>postDispatch({type:"UPVOTE",payload:postId})}><img src="https://img.icons8.com/?size=512&id=NJKamAy8tnNG&format=png" className="icon" alt="icons"/></button>
         {upvotes - downvotes}
-        <button onClick={()=>postDispatch({type:"DOWNVOTE",payload:postId})}>Downvote</button>
+        <button onClick={()=>postDispatch({type:"DOWNVOTE",payload:postId})}><img src="https://img.icons8.com/?size=512&id=Yftegc6_6JFs&format=png" className="icon" alt="icons"/></button>
       </div>
       <div className={postCard.content}>
         <div className={postCard.header}>
@@ -52,8 +50,8 @@ export const PostCard = ({ postData }) => {
           <button disabled className={postCard.options}>
             <span className="material-symbols-outlined">share</span>
           </button>
-          <button disabled className={postCard.options}>
-            <span className="material-symbols-outlined">bookmark</span>
+          <button className={postCard.options} onClick={()=>postDispatch({type:"BOOKMARK",payload:postId})}>
+           <img src={isBookmarked?"https://img.icons8.com/?size=512&id=84065&format=png":"https://img.icons8.com/?size=512&id=26087&format=png"} alt="bookmark" className="icon"/>
           </button>
         </div>
       </div>
