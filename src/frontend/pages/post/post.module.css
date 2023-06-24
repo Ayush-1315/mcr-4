@@ -4,3 +4,41 @@
     min-height: 80vh;
     text-align: left;
 }
+.postContainer>a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+}
+.profile{
+    height: 3rem;
+    width: 3rem;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+.commentBox{
+    background-color: white;
+    padding:2rem;
+    display: flex;
+    width:46vw; 
+    padding-bottom: 0.3rem;
+}
+.comments{
+    display: flex;
+    width:100%;  
+}
+.comments p {
+    margin: 0;
+}
+.comments div:nth-child(2){
+    width:100%;
+}
+.commentFooter{
+    color:grey;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid;
+    padding:0.5rem;
+}
