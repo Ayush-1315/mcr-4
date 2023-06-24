@@ -42,7 +42,7 @@ export const PostCard = ({ postData }) => {
           <p>{postDescription}</p>
         </div>
         <div className={postCard.footer}>
-          <Link to={`/post/${postId}}`}>
+          <Link to={`/post/${postId}`}>
           <button className={postCard.options}>
             <span className="material-symbols-outlined">chat_bubble</span>
           </button>
