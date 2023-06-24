@@ -1,0 +1,11 @@
+.listContainer{
+    text-align: left;
+    padding:2rem;
+    width:15vw;
+    min-height: 80vh;
+}
+.sortOpt{
+    padding:0.3reM;
+    color:rgb(57, 53, 53);
+    font-weight: bolder;
+}

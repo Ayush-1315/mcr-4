@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom"
+import post from "./post.module.css"
+
 export const Post=()=>{
-    return <>post Here</>
+    const {postId}=useParams();
+    return <div className={post.postContainer}>post Here</div>
 }

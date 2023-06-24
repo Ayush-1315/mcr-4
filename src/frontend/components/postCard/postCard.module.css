@@ -1,0 +1,48 @@
+.card{
+    background-color: white;
+    padding:0.5rem;
+    margin:0.2rem;
+    display: flex;
+    width: 50vw;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    min-width:4rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap:0.3rem;
+}
+.header p{
+    margin:0;
+}
+.content{
+    text-align: left;
+}
+.profile{
+    height:2rem;
+    width: 2rem;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 50%;
+}
+.chips{
+    background-color: cyan;
+    margin: 0 0.2rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid;
+}
+.options{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+padding:0.2rem 1rem
+}
